@@ -6,7 +6,7 @@ function About() {
       <div className='w-full flex justify-between'>
         <div className='bg-inherit text-left float-left block'>
           <span className='text-highlight text-4xl mb-4'>
-            Hi, I'am Nitish,
+            Hi, I&apos;am Nitish,
           </span>
           <br />
           <span className='text-white gap-x-1 text-4xl my-6'>I help startups build products that works. ⚡️⚡️ </span><br />
