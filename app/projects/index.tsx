@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 // Our custom button component
 // import SliderButtons from "./SliderButtons";
@@ -45,8 +46,9 @@ const Projects: React.FC<DemoSliderProps> = ({ data }) => {
             modules={[Autoplay, Navigation, Pagination]}
             style={{height:"500px"}}
           >
-            {data.map(({ id, image, tagline, title, buttons, content = "" }) => (
+            {data.map(({ id, image, tagline, title, buttons, content = "", link="" }:any) => (
               <SwiperSlide key={id} className="">
+                <Link href={link}>
                 <div
                   className="h-full w-full absolute left-0 top-0 shadow-2xl"
                   style={{
@@ -75,6 +77,7 @@ const Projects: React.FC<DemoSliderProps> = ({ data }) => {
                 <p className=" font-bold text-white mb-8">
                       {tagline}
                     </p>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
