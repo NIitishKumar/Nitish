@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+
+    .comment-line {
+      color: gray; /* Change color to gray */
+      font-style: italic; /* Make the text italic */
+    }

@@ -6,13 +6,16 @@ import Projects from "./projects";
 import experienceData from "../dataSet/experience"
 import projects from "../dataSet/projects"
 import Contact from "./pages/contact";
+import Compiler from "./components/Compiler";
+import Portfolio from "./profile/page";
 
 export default function Home() {
   return (
-    <main className="bg-slate-950	 flex min-h-screen flex-col items-center justify-between  pt-28 lg:p-24 xl:p-24">
-      <Navbar />
+    <main className="">
+      <Portfolio />
+      {/* <Navbar />
       <div className="" id="about">
-        <About/>
+        <About />
       </div>
       <div className="w-[100%] my-20" id="experience">
         <Experience data={experienceData} />
@@ -23,6 +26,9 @@ export default function Home() {
       <div className="w-[100%] my-24" id="contact">
         <Contact />
       </div>
+      <div className="w-[100%] my-24" id="contact">
+        <Compiler />
+      </div> */}
     </main>
   );
 }
